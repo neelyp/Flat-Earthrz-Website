@@ -14,7 +14,7 @@
           <div class="nav-links">
             <a href="#overview">Overview</a>
             <a href="#world">World</a>
-            <a href="#recipes">Recipes</a>
+            <a href="#recipes">Build Queue</a>
             <a href="#play">Play</a>
           </div>
         </div>
@@ -23,12 +23,13 @@
       <header class="hero" id="top">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">2D Co-op / Time Management / Resource Gathering</p>
-            <h1>Build under pressure across three floating islands.</h1>
+            <p class="eyebrow">2D Co-op / Survival / Resource Gathering</p>
+            <h1>Save two worlds before the meteor showers hit.</h1>
             <p class="hero-text">
-              Two aliens. One shared crafter. A blueprint ticker that never stops.
-              Every second you waste on your island is a second your partner
-              can't afford on theirs.
+              Two alien workers crash-land on separate flat worlds. Harvest
+              island-specific resources, toss them to the shared hub, build
+              defenses, feed your people, and rescue everyone before the final
+              shower destroys the outer islands.
             </p>
             <div class="sprite-showcase" aria-label="Playable aliens">
               <figure class="sprite-card sprite-card-blue">
@@ -36,19 +37,19 @@
                   src="assets/sprites/blue-alien-pickaxe.gif"
                   alt="Blue alien with pickaxe"
                 />
-                <figcaption>Blue miner</figcaption>
+                <figcaption>Blue gatherer</figcaption>
               </figure>
               <figure class="sprite-card sprite-card-red">
                 <img
                   src="assets/sprites/red-alien-axe.gif"
                   alt="Red alien with axe"
                 />
-                <figcaption>Red builder</figcaption>
+                <figcaption>Red miner</figcaption>
               </figure>
             </div>
             <div class="hero-actions">
               <a class="button button-primary" href="#overview">See How It Works</a>
-              <a class="button button-secondary" href="#recipes">Crafting Recipes</a>
+              <a class="button button-secondary" href="#recipes">Build Queue</a>
             </div>
             <div class="stats">
               <div class="stat">
@@ -56,22 +57,22 @@
                 <span class="stat-label">Players</span>
               </div>
               <div class="stat">
-                <span class="stat-value">3</span>
-                <span class="stat-label">Islands</span>
+                <span class="stat-value">12</span>
+                <span class="stat-label">Structures</span>
               </div>
               <div class="stat">
-                <span class="stat-value">6</span>
-                <span class="stat-label">Craftables</span>
+                <span class="stat-value">5</span>
+                <span class="stat-label">Showers</span>
               </div>
             </div>
           </div>
 
           <div class="hero-visual" aria-label="Isometric map preview">
             <div class="ticker">
-              <span class="ticker-label">Current Blueprint</span>
+              <span class="ticker-label">Current Build</span>
               <div class="ticker-row">
-                <span>Roof x2</span>
-                <span>00:38</span>
+                <span>Build: Shield Pylon</span>
+                <span>Shower 3/5</span>
               </div>
             </div>
 
@@ -83,14 +84,14 @@
                   src="assets/sprites/blue-alien.gif"
                   alt="Blue alien sprite"
                 />
-                <h2>Stone Route</h2>
-                <p>Blue-only terrain.</p>
+                <h2>Verdant Glade</h2>
+                <p>Wood, fiber, and crystal.</p>
               </article>
 
               <article class="iso-card hub-zone">
                 <span class="zone-tag">Central Hub</span>
-                <h2>Crafter</h2>
-                <p>Both aliens craft and deliver here.</p>
+                <h2>Safe Hub</h2>
+                <p>Stockpile, build, and rescue here.</p>
               </article>
 
               <article class="iso-card red-zone">
@@ -100,7 +101,7 @@
                   src="assets/sprites/red-alien.gif"
                   alt="Red alien sprite"
                 />
-                <h2>Mineral Route</h2>
+                <h2>Molten Ridge</h2>
                 <p>Ore, coal, and stone for Red.</p>
               </article>
 
@@ -118,39 +119,37 @@
           <div class="container">
             <div class="section-heading">
               <p class="eyebrow">Core Gameplay Loop</p>
-              <h2>Harvest, toss, process, craft, deliver.</h2>
+              <h2>Harvest, toss, build, feed, rescue.</h2>
             </div>
 
             <div class="feature-grid">
               <article class="feature-card">
                 <h3>Harvesting</h3>
                 <p>
-                  Break raw resource nodes with axes and pickaxes. Every swing
-                  produces portable material your partner is already waiting for.
+                  Blue gathers wood, fiber, and crystal. Red gathers stone, ore,
+                  and coal. Each side has resources the shared hub needs.
                 </p>
               </article>
               <article class="feature-card">
                 <h3>Logistics</h3>
                 <p>
-                  Getting material across the void is half the job. Throw
-                  ingredients between islands fast enough to keep the assembly
-                  line fed — drop one and the whole order slips.
+                  Toss materials across the void into the hub stockpile. If the
+                  hub does not have the recipe, the next structure cannot be
+                  built.
                 </p>
               </article>
               <article class="feature-card">
-                <h3>Processing</h3>
+                <h3>Biofuel</h3>
                 <p>
-                  Raw wood becomes sticks. Raw stone becomes pebbles. Processed
-                  ingredients reach the Omni-Crafter ready to build — unprocessed
-                  ones just pile up.
+                  Blue aliens need fiber. Red aliens need coal. Keep both
+                  Biofuel meters alive or an entire population can starve out.
                 </p>
               </article>
               <article class="feature-card">
-                <h3>Order Fulfillment</h3>
+                <h3>Rescue Windows</h3>
                 <p>
-                  The ticker shows the active blueprint, the required quantity,
-                  and a countdown. Match the order exactly before the timer drains
-                  for a full star rating.
+                  Five meteor showers shrink the outer worlds. During the rescue
+                  window, carry aliens to the hub before the impact lands.
                 </p>
               </article>
             </div>
@@ -161,38 +160,38 @@
           <div class="container split-layout">
             <div>
               <div class="section-heading left">
-                <p class="eyebrow">Tri-Island System</p>
-                <h2>Separated by design. Dependent by necessity.</h2>
+                <p class="eyebrow">Flat Worlds</p>
+                <h2>Three islands, one civilization to save.</h2>
               </div>
               <p class="section-copy">
-                No player can finish an order alone. The void between islands
-                forces constant specialization, clear communication, and a
-                material flow that cannot afford to stall. Every layout decision
-                in Flat Earthrz exists to make teamwork feel essential
-                rather than optional.
+                Flat Earthrz starts after two species crash-land on opposite
+                flat worlds. The center hub is their only long-term home, so
+                players must build defense and sustainability structures there
+                before the fifth meteor shower destroys the outer islands.
               </p>
             </div>
 
             <div class="zone-list">
               <article class="zone-panel">
-                <h3>Blue Island</h3>
+                <h3>Verdant Glade</h3>
                 <p>
-                  Stone-rich terrain only the Blue Alien can traverse. Your
-                  partner is counting on whatever comes off this route.
+                  Blue-only island stocked with trees, vine bushes, and crystal
+                  nodes. Fiber from this side feeds the blue population.
                 </p>
               </article>
               <article class="zone-panel">
-                <h3>Red Island</h3>
+                <h3>Molten Ridge</h3>
                 <p>
-                  Mineral routes stocked with ore, coal, and stone — exclusively
-                  accessible to the Red Alien. Nothing gets crafted without it.
+                  Red-only island with rocks, ore veins, and coal deposits. Coal
+                  from this side keeps the red population fed.
                 </p>
               </article>
               <article class="zone-panel">
                 <h3>Central Hub</h3>
                 <p>
-                  Neutral ground where both aliens converge. The Omni-Crafter,
-                  delivery zone, and the order screen all live here.
+                  Shared safe zone with the crafter, furnace, stockpile, and
+                  rescue space. Structures appear here as the build queue
+                  advances.
                 </p>
               </article>
             </div>
@@ -203,29 +202,29 @@
           <div class="container">
             <div class="section-heading">
               <p class="eyebrow">Mechanics &amp; Controls</p>
-              <h2>Four actions. Infinite coordination problems.</h2>
+              <h2>Two control schemes, one shared emergency.</h2>
             </div>
 
             <div class="mechanics-table">
               <div class="table-row table-head">
                 <span>Action</span>
-                <span>What it demands</span>
+                <span>What it does</span>
               </div>
               <div class="table-row">
                 <span>Harvesting</span>
-                <span>Strike resource nodes with the right tool to produce transportable units. Speed here sets the pace for everything downstream.</span>
+                <span>P1 uses WASD and E. P2 uses arrow keys and Enter. Stand near a node to harvest resources.</span>
               </div>
               <div class="table-row">
-                <span>Logistics</span>
-                <span>Throw and route ingredients across the void under time pressure. A missed toss can break an order chain mid-run.</span>
+                <span>Tossing</span>
+                <span>P1 presses Q and P2 presses Period to throw the selected item toward the central hub stockpile.</span>
               </div>
               <div class="table-row">
                 <span>Processing</span>
-                <span>Convert wood into sticks and stone into pebbles before handoff. Sending raw material to the Crafter wastes a trip.</span>
+                <span>P1 presses T and P2 presses M at the machine to process materials such as planks, bricks, ingots, and rope.</span>
               </div>
               <div class="table-row">
-                <span>Order Fulfillment</span>
-                <span>Build the exact blueprint before the timer hits zero. Quantity and type both matter — a close guess scores nothing.</span>
+                <span>Build / Rescue</span>
+                <span>P1 presses F and P2 presses Comma at the crafter to build. Tab and Right Shift pick up aliens during rescue windows.</span>
               </div>
             </div>
           </div>
@@ -234,34 +233,58 @@
         <section class="section section-alt" id="recipes">
           <div class="container">
             <div class="section-heading">
-              <p class="eyebrow">Crafting Board</p>
-              <h2>Six recipes. Every one requires both islands.</h2>
+              <p class="eyebrow">Build Queue</p>
+              <h2>Twelve structures decide whether the hub survives.</h2>
             </div>
 
             <div class="recipe-grid">
               <article class="recipe-card">
-                <h3>Fences</h3>
-                <p>3 sticks + 3 pebbles</p>
+                <h3>Barricade</h3>
+                <p>3 stone + 2 wood</p>
               </article>
               <article class="recipe-card">
-                <h3>Support Beams</h3>
-                <p>3 wood + 1 stone</p>
+                <h3>Watch Tower</h3>
+                <p>4 wood + 2 fiber</p>
               </article>
               <article class="recipe-card">
-                <h3>Wall</h3>
-                <p>4 wood + 2 pebbles</p>
+                <h3>Stone Wall</h3>
+                <p>4 stone + 1 ore</p>
               </article>
               <article class="recipe-card">
-                <h3>Foundation</h3>
-                <p>4 stone + 2 sticks</p>
+                <h3>Shield Pylon</h3>
+                <p>3 crystal + 2 ore</p>
               </article>
               <article class="recipe-card">
-                <h3>Roof</h3>
-                <p>2 wood + 2 stone</p>
+                <h3>Turret Platform</h3>
+                <p>3 ore + 2 coal + 2 stone</p>
               </article>
               <article class="recipe-card">
-                <h3>Stairs</h3>
-                <p>3 stone + 3 sticks</p>
+                <h3>Reinforced Dome</h3>
+                <p>3 stone + 2 crystal + 2 ore</p>
+              </article>
+              <article class="recipe-card">
+                <h3>Garden Dome</h3>
+                <p>4 fiber + 2 crystal</p>
+              </article>
+              <article class="recipe-card">
+                <h3>Water Purifier</h3>
+                <p>3 crystal + 2 stone</p>
+              </article>
+              <article class="recipe-card">
+                <h3>Solar Array</h3>
+                <p>3 crystal + 3 ore</p>
+              </article>
+              <article class="recipe-card">
+                <h3>Habitat Module</h3>
+                <p>3 wood + 3 stone + 2 fiber</p>
+              </article>
+              <article class="recipe-card">
+                <h3>Comms Beacon</h3>
+                <p>4 crystal + 3 ore</p>
+              </article>
+              <article class="recipe-card">
+                <h3>Landing Pad</h3>
+                <p>4 stone + 3 ore + 2 wood</p>
               </article>
             </div>
           </div>
@@ -271,21 +294,20 @@
           <div class="container goals-grid">
             <article class="goal-card">
               <p class="eyebrow">Design Goals</p>
-              <h2>Readable, fast, and built for co-op clarity.</h2>
+              <h2>Readable, urgent, and built around shared survival.</h2>
               <ul class="goal-list">
-                <li>Top-down isometric 2D presentation keeps spatial relationships legible at a glance.</li>
-                <li>The UI ticker surfaces blueprint, quantity, and countdown simultaneously — no hunting for information mid-run.</li>
-                <li>Star ratings are tied to speed and accuracy, not just completion, so there is always something to chase.</li>
+                <li>Top-down isometric 2D presentation keeps the three flat worlds and leap routes legible.</li>
+                <li>The HUD tracks current build, hub stockpile progress, defense, sustainability, Biofuel, and shower timer.</li>
+                <li>Difficulty changes the time between showers: Easy gives 8 minutes, Normal gives 5, and Hard gives 3.</li>
               </ul>
             </article>
             <article class="goal-card accent">
-              <p class="eyebrow">Why It Works</p>
-              <h2>Specialization turns every second into a team decision.</h2>
+              <p class="eyebrow">Win Condition</p>
+              <h2>Build everything and save every alien.</h2>
               <p>
-                Because no player can finish an order alone, every action is
-                implicitly a communication. The map layout, recipe dependencies,
-                and shared Omni-Crafter creates constant coordination pressure —
-                in local co-op and online alike.
+                To win, players must finish all 12 hub structures and have all
+                five blue aliens and all five red aliens safe on the hub when the
+                final meteor shower destroys the outer worlds.
               </p>
             </article>
           </div>
@@ -295,7 +317,7 @@
           <div class="container">
             <div class="section-heading">
               <p class="eyebrow">Playable Build</p>
-              <h2>Drop the game straight into the site.</h2>
+              <h2>Play the current Flat Earthrz build.</h2>
             </div>
 
             <div class="embed-shell">
@@ -339,7 +361,7 @@
       <footer class="footer">
         <div class="container footer-row">
           <p>Flat Earthrz</p>
-          <p>Co-op fabrication across the void.</p>
+          <p>Co-op survival across the void.</p>
         </div>
       </footer>
     </div>

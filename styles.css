@@ -640,6 +640,28 @@ body::before {
   background: #31415a;
 }
 
+.embed-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 4px solid var(--line);
+  background: #20283b;
+}
+
+.embed-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.embed-note {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .game-placeholder {
   min-height: 420px;
   display: grid;
@@ -673,6 +695,15 @@ body::before {
   min-height: 560px;
   border: 0;
   background: #0f1420;
+}
+
+#game-embed:fullscreen {
+  padding: 0;
+  background: #000;
+}
+
+#game-embed:fullscreen iframe {
+  min-height: 100vh;
 }
 
 .footer {
@@ -736,6 +767,10 @@ body::before {
 
   .nav-links {
     gap: 0.85rem;
+  }
+
+  .embed-actions {
+    align-items: flex-start;
   }
 
   .sprite-card {

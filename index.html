@@ -301,15 +301,35 @@
             <div class="embed-shell">
               <div class="embed-header">
                 <span>Mission Feed</span>
-                <span>Embed Ready</span>
+                <span>Fullscreen Enabled</span>
               </div>
-              <div class="game-placeholder">
-                <h3>Iframe slot</h3>
-                <p>
-                  Replace this placeholder with your playable build when the game
-                  export is ready.
+              <div class="embed-actions">
+                <div class="embed-buttons">
+                  <button
+                    class="button button-secondary"
+                    id="fullscreen-button"
+                    type="button"
+                  >
+                    Fullscreen Game
+                  </button>
+                  <a
+                    class="button button-primary"
+                    href="https://zandasalamanda.github.io/GJ26/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Open Game Website</a
+                  >
+                </div>
+                <p class="embed-note">
+                  Use the fullscreen button to expand the embedded game.
                 </p>
-                <code>&lt;iframe src="your-game-path" title="Flat Earthrz"&gt;&lt;/iframe&gt;</code>
+              </div>
+              <div class="game-placeholder" id="game-embed">
+                <iframe
+                  src="https://zandasalamanda.github.io/GJ26/"
+                  title="Flat Earthrz"
+                  allowfullscreen
+                ></iframe>
               </div>
             </div>
           </div>
@@ -323,5 +343,20 @@
         </div>
       </footer>
     </div>
+    <script>
+      const fullscreenButton = document.getElementById("fullscreen-button");
+      const gameEmbed = document.getElementById("game-embed");
+
+      fullscreenButton?.addEventListener("click", async () => {
+        const requestFullscreen =
+          gameEmbed.requestFullscreen ||
+          gameEmbed.webkitRequestFullscreen ||
+          gameEmbed.msRequestFullscreen;
+
+        if (requestFullscreen) {
+          await requestFullscreen.call(gameEmbed);
+        }
+      });
+    </script>
   </body>
 </html>

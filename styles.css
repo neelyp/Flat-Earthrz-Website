@@ -667,6 +667,14 @@ body::before {
   box-shadow: var(--pixel-shadow);
 }
 
+.embed-shell iframe {
+  display: block;
+  width: 100%;
+  min-height: 560px;
+  border: 0;
+  background: #0f1420;
+}
+
 .footer {
   padding: 1.4rem 0 2.5rem;
 }
